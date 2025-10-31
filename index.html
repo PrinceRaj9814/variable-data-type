@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <script>
+            let name = prompt("Enter your name");
+            let age = prompt("Enter your age");
+            let marks = Number(prompt("Enter your marks"));
+
+            let result = "";
+
+            if (marks < 30) {
+                result = `${name} (${age}) Failed`;
+            } 
+            else if (marks >= 30 && marks < 50) {
+                result = `${name} (${age}) got grade 'C'`;
+            } 
+            else if (marks >= 50 && marks < 70) {
+                result = `${name} (${age}) got grade 'B'`;
+            } 
+            else if (marks >= 70 && marks < 90) {
+                result = `${name} (${age}) got grade 'A'`;
+            } 
+            else {
+                result = `${name} (${age}) got grade 'A+'`;
+            }
+
+            document.write(`<h2>${result}</h2>`);
+    </script>
+</body>
+</html>
